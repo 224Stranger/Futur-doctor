@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futur Doctor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Assets/Css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body> 
+    <header>
+        <section class="top-header">
+            <div class="container">
+                <div class="container-fluid">
+                  <div class="d-flex  justify-content-between">
+                    <div class="d-flex contect">
+                        <a href="tel:(002) 01061245741"><i class="bi bi-telephone-fill pe-2"></i>Help Line:(002) 01061245741</a>
+                        <a href="#"><i class="bi bi-geo-alt-fill pe-2"></i>Location: Brooklyn, New York</a>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icons d-flex gap-2 border-end pe-5 mb-3" >
+                            <div><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a></div>
+                            <div><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a></div>
+                            <div><a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube "></i></a></div>
+                        </div>
+                        <div class="d-flex ">
+                            <form class="header-form">  <input type="text" placeholder="Type search words" onclick="changePlaceholderColor(this)"></form>
+                            <i class="bi bi-search "></i>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-header">
+            <div class="container-xl">
+              <div>
+                <nav class="navbar navbar-expand-lg responsive-first">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="Assets/Media/header-logo.png" alt="logo"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ms-auto mt-2 d-flex gap-3">
+                          <li class="nav-item ">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#">Courses</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#">Shop</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#">About us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                          </li>
+                        </ul>
+                        <div class="vr header-vr"></div>
+                        <a href="#" class="login-a"><i class="bi bi-person ms-2 me-2"></i>Login</a>
+                        <button class="btn border rounded-pill ms-4 bg-gradient" type="submit"><i class="bi bi-calendar2 pe-2"></i>Register Now</button>
+                      </div>
+                    </div>
+                 </nav>
+                 <nav class="navbar responsive-second fixed-top">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="Assets/Media/header-logo.png" alt="logo"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></a></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                           <div class="sidebar-search">
+                            <i class="bi bi-search ps-4"></i>
+                            <form class="d-flex" >
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                           </div>
+                            <hr>
+                          <ul class="navbar-nav sidebar-a justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item ">
+                              <a class="nav-link" aria-current="page" href="#"><img src="Assets/Media/home-icon.png" alt="icon" class="me-2 ">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#"><img src="Assets/Media/shop-icon.png" alt="icon"class="me-2">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="Assets/Media/courses-icon.png" alt="icon"class="me-2">Courses</a>
+                             </li>
+                            <li class="nav-item d-flex align-items-center">
+                              <img src="Assets/Media/choose-icon.png" alt="icon"class="me-2">  
+                              <a class="nav-link" href="#">Which Branch of Medicine Should I Choose?</a>
+                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="Assets/Media/get-in-touch-icon.png" alt="icon"class="me-2">Get in touch</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-cart  fs-2 me-2 icon-col"></i>Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="Assets/Media/profile-icon.png" alt="icon"class="me-2">Profile</a>
+                            </li>  
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-gear fs-2 me-2 icon-col"></i>Setting</a>
+                            </li>  
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="Assets/Media/logout-icon.png" alt="icon" class="me-2">Log Out</a>
+                            </li>  
+                        </ul>
+                        <button class="btn border rounded-pill mt-4 bg-gradient" type="submit"><i class="bi bi-calendar2 pe-2"></i>Register Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            </div>
+        </section>
+    </header>
+    <!--header-End-->
+    <main>
+        <!--hero-section-->
+        <section class="hero-bg">
+          <div class="hero-bg-layer"></div>
+            <div class="container">
+                <div class="container-fluid">
+                   <h1>Providing Best<br> Medical Care </h1>
+                   <p>The health and well-being of our patients and their health care team will<br>
+                      always be our priority, so we follow the best practices for cleanliness.
+                   </p>
+                   <div class="hero-icons row gap-3">
+                       <div class="col-lg-2 col-md-5 col-sm-5 col-5">
+                           <div class="hero-icon-bg"><img src="Assets/Media/hero-4.png" alt="logo"></div>
+                           <span>Examination</span>
+                       </div>
+                       <div class="col-lg-2 col-md-5 col-sm-5 col-5">
+                           <div class="hero-icon-bg "><img src="Assets/Media/hero-3.png" alt="logo"></div>
+                           <span>Prescription </span>
+                       </div>
+                       <div class="col-lg-2 col-md-5 col-sm-5 col-5">
+                           <div class="hero-icon-bg"><img src="Assets/Media/hero-2.png" alt="logo"></div>
+                           <span>Cardiogram</span>
+                       </div>
+                       <div class="col-lg-3 col-md-5 col-sm-5 col-5">
+                           <div class="hero-icon-bg "><img src="Assets/Media/hero-1.png" alt="logo"></div>
+                           <span>Blood Pressure</span>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <!--hero-section-->
+        <!--Courses-->
+        <section class="courses-bg">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row card-position">
+                        <div class="col-lg-4 col-md-6 col-12">
+                          <div class="card-course">
+                            <div class="card-body d-flex gap-4">
+                                <div class="mt-2"><img src="Assets/Media/Vector-icon.png"></div>
+                                <div>
+                                    <h5 class="card-title">Access Courses</h5>
+                                    <p class="card-text">If You Recently Received One of the Apprentice Doctor Simulation Kits,<br><span class="fw-bold pb-0"> CONGRATULATIONS AND WELCOME!</span></p>
+                                    <a href="#" class="btn card-course-border ">Get Started Here<i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                          <div class="card register">
+                            <div class="card-body d-flex gap-4">
+                                <div >
+                                  <img src="Assets/Media/course-icon.png ">
+                                </div>
+                               <div>
+                                <h5 class="card-title">Already Registered?</h5>
+                                <p class="card-text">If You Are Already Registered Then Click The Button To Login Again To Your Account,<br> 
+                                <span class="fw-bold">WELCOME BACK!</span></p>
+                                <a href="#" class="btn card-course-border">Login Now <i class="bi bi-arrow-right"></i></a>
+                               </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-12">
+                            <div class="card new-one">
+                              <div class="card-body d-flex gap-4">
+                                  <div>
+                                    <img src="Assets/Media/prof-icon.png">
+                                  </div>
+                                  <div>
+                                     <h5 class="card-title">New Here?</h5>
+                                     <p class="card-text">If You Are New To our website, read on by clicking the button below,and we’ll explain eveything to you.</p>
+                                     <a href="#" class="btn card-course-border">Read Here<i class="bi bi-arrow-right"></i></a>
+                                  </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center text-color pt-5">Our Courses</p>
+                    <div>
+                        <h2>Providing Medical Care For The<br> Sickest In Our Community.</h2>
+                        <div class="group row pb-5" >
+                          <div class="col-lg-4 col-md-6 mt-4">
+                            <div class="card-slick ">
+                              <img src="Assets/Media/course-2.png" class="card-img-top" alt="sign">
+                              <div class="card-body">
+                                <h5 class="card-title">Foundation Medical Course</h5>
+                                <p class="card-text">Some neurologists receive subspecialty training focusing on a particular area of the fields, these training programs are called fellowships, and are one to two years.</p>
+                               <ul>
+                                    <li><a href="#"><i class="bi bi-check pe-3"></i>Neurocritical Care</a></li>
+                                    <li><a href="#"><i class="bi bi-check pe-3"></i>Neuro Oncology</a></li>
+                                    <li><a href="#"><i class="bi bi-check pe-3"></i>Geriatric Neurology</a></li>
+                               </ul>
+                               <a href="#" class="btn course-slider-border mb-5">Start Now<i class="bi bi-arrow-right ps-2"></i></a>
+                               <hr >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 mt-4">
+                            <div class="card-slick ">
+                              <img src="Assets/Media/heart-icon.png" class="card-img-top" alt="sign">
+                              <div class="card-body">
+                                <h5 class="card-title">Orthopedic Fracture Reduction</h5>
+                                <p class="card-text">All cardiologists study the disorders of the heart, but the study of adult and child heart disorders are trained to take care of small children and adult heart disease.</p>
+                               <ul>
+                                    <li><a href="#"><i class="bi bi-check pe-3"></i>Cardiac Electrophysiolo</a></li>
+                                    <li><a href="#"><i class="bi bi-check pe-3"></i>Nuclear Cardiology</a></li>
+                                    <li><a href="#"><i class="bi bi-check pe-3"></i>Echocardiography</a></li>
+                               </ul>
+                               <a href="#" class="btn course-slider-border mb-5">Start Now<i class="bi bi-arrow-right ps-2"></i></a>
+                               <hr>
+                              </div>
+                          </div>
+                          </div>
+                          <div class="col-lg-4 mt-4">
+                            <div class="card-slick ">
+                              <img src="Assets/Media/Microscope Icon.png" class="card-img-top" alt="sign">
+                              <div class="card-body">
+                                <h5 class="card-title">Venipuncture & Phlebotomy</h5>
+                                <p class="card-text">Pathology is the study of disease, it is the bridge between science and medicine. Also it underpins every aspect of patient care, from diagnostic testing and treatment.</p>
+                               <ul>
+                                    <li><a href="#"><i class="bi bi-check pe-3"></i>Surgical Pathology</a></li>
+                                    <li><a href="#"><i class="bi bi-check pe-3"></i> Histopathology</a></li>
+                                    <li><a href="#"><i class="bi bi-check pe-3"></i>Cytopathology</a></li>
+                               </ul>
+                               <a href="#" class=" btn course-slider-border mb-5">Start Now<i class="bi bi-arrow-right ps-2"></i></a>
+                               <hr>
+                              </div>
+                          </div>
+                          </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Courses-->
+        <!--About-->
+        <section class="about">
+            <div class="container">
+                <div class="container-fluid">
+                    <h2>Gain a Fair Advantage by Mastering Skills NOW that Most Only Develop Months or Years Into Their Residencies</h2>
+                   <div class="row d-flex">
+                    <div class="col-lg-6 col-12">
+                        <div class="d-flex gap-4 align-items-center justify-content-center">
+                            <img src="Assets/Media/about-img.png" alt="logo">
+                            <p class="pt-3 fw-bold text-color">Access Accredited Online Courses and Simulation Tools for Students Pursuing a Career in Medicine</p>
+                        </div>
+                        <p class="pt-3">The medical field is incredibly competitive and good grades alone are no longer enough to get you into med-school. Extra courses, volunteering at a hospital, and conducting research projects are some of the ways you can stand out from the crowd.</p>
+                        <img src="Assets/Media/gallery-f.png" alt="img" class="respons-100">
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex justify-content-center h-100 pb-5">
+                        <div class="card about-card-layer border-0" >
+                            <div class="card-body about-card">
+                              <p><span class="fw-bold text-color ">Doctors Academy will give you the tools you need to maximize your chances and enjoy yourself along the way.</span><br>
+                                Courses are divided into sections each containing a teaching lesson followed by one or more practical projects. You will really benefit from the knowledge but an added advantage comes from practicing the medical skills in a simulation setting so that you don’t have to practice on people.</p>
+                              <ul>
+                                <li class="d-flex"><i class="bi bi-check  pe-4 "></i>Learn how to set a broken bone for various types of fractures</li>
+                                <li class="d-flex"><i class="bi bi-check pe-4 "></i>Learn how to suture wounds on multi-layered, highly realistic artificial skin and learn which suturing technique is best for which type of injury</li>
+                                <li class="d-flex"><i class="bi bi-check pe-4"></i>Practice drawing blood and learn how to pin point blood vessels even when they’re stubbornly hard to find</li>
+                                <li class="d-flex"><i class="bi bi-check  pe-4"></i>Practice drawing blood and learn how to pin point blood vessels even when they’re stubbornly hard to find</li>
+                                <li class="d-flex"><i class="bi bi-check pe-4"></i>Practice drawing blood and learn how to pin point blood vessels even when they’re stubbornly hard to find</li>
+                                <li class="d-flex"><i class="bi bi-check pe-4"></i>Practice drawing blood and learn how to pin point blood vessels even when they’re stubbornly hard to find</li>
+                                <li class="d-flex"><i class="bi bi-check pe-4"></i>Practice drawing blood and learn how to pin point blood vessels even when they’re stubbornly hard to find</li>
+                                <li class="d-flex"><i class="bi bi-check pe-4"></i>Practice drawing blood and learn how to pin point blood vessels even when they’re stubbornly hard to find</li>
+                              </ul>
+                            </div>
+                          </div>
+                     </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <!--About-->
+        <!--Certificates-->
+        <section class="Certificates">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row d-flex ">
+                        <div class="col-lg-6 col-12 ">
+                            <p class="fw-bolder">Caring For The Health Of You And Your Family.</p>
+                            <h3 class="fw-bolder">Enjoy Access to Monthly <br> Online Workshops Presented<br> by a Surgeon</h3>
+                        </div>
+                        <div class="col-lg-6 col-12 ">
+                            <p>If you have your mind set on a medical career and you’re serious about it, you’re at the right place and we’re here for you. The Apprentice Corporation’s Future Doctors Academy has helped thousands of young people achieve their dream. If you want, we’d like to do the same for you!</p>
+                            <ul class="">
+                               <li class="d-flex align-items-center "><img src="Assets/Media/certificate-icon.png" alt="icon" class="pe-3">Learn and practice medical skills like suturing and receive live feedback on your efforts.</li>
+                                <li class="d-flex align-items-center"><img src="Assets/Media/certificate-icon.png" alt="icon" class="pe-3">Enjoy extremely interesting and detailed visual case-study presentations containing material not covered in the Future Doctors Academy courses.</li>
+                                <li class="d-flex align-items-center"><img src="Assets/Media/certificate-icon.png" alt="icon" class="pe-3">Learn and practice medical skills like suturing and receive live feedback on your efforts.</li>
+                                <li class="d-flex align-items-center"><img src="Assets/Media/certificate-icon.png" alt="icon" class="pe-3">Learn and practice medical skills like suturing and receive live feedback on your efforts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row certfict-card d-flex justify-content-center ">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-3">
+                            <img src="Assets/Media/certificate-a.png" alt="photo" class="w-100">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-3">
+                            <img src="Assets/Media/certificate-b.png" alt="photo"  class="w-100">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-3">
+                            <img src="Assets/Media/certificate-c.png" alt="photo"  class="w-100">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-3">
+                            <img src="Assets/Media/certificate-d.png" alt="photo" class="w-100">
+                        </div>
+                    </div>
+                    <div class="row hospital">
+                       <div class="col-lg-2 col-12 d-flex justify-content-center ">
+                         <img src="Assets/Media/Hospital Icon.png" alt="Hospital" class="mb-5">
+                       </div>
+                        <div class="col-lg-7 col-12 hospital-p mb-5">
+                            <h3>Enjoy Access to Monthly Online Workshops Presented by a Surgeon</h3>
+                            <p>If you have your mind set on a medical career and you’re serious about it, you’re at the right place and we’re here for you. The Apprentice Corporation’s Future Doctors Academy has helped thousands of young people achieve their dream. If you want, we’d like to do the same for you!</p>
+                        </div>
+                       <div class="col-lg-2 col-12 d-flex justify-content-center align-items-center">
+                        <a href="#" class="hospital-btn">Register Now<i class="bi bi-arrow-right ms-2"></i></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Certificates-->
+        <!--shop-->
+        <section class="Shop">
+            <div class="container">
+                <div class="container-fluid">
+                    <p class="text-color fw-bold text-center pt-5 ">Shop</p>
+                    <h2>Providing Medical Care For The <br>Sickest In Our Community.</h2>
+                    <div class="row certfict-card pt-0 d-flex justify-content-center">
+                        <div class="col-lg-3 col-md-5 col-sm-5 col-12 card mt-4">
+                            <div class="s-img">
+                              <img src="Assets/Media/shop-.png" class="card-img-top" alt="logo">
+                              <div class="overlayer-shop d-flex justify-content-center">
+                                <button type="button"><i class="bi bi-cart3"></i>Add to Cart</button>
+                            </div>
+                            <span class="bg-tag"><div class="shop-tag">Sale</div></span>
+                            </div>
+                            <div>
+                                <div class="card-body p-4 card-q ">
+                                <p class="card-text text-color fw-bold d-flex justify-content-center">Access to all the courses</p>
+                                <p class="text-center pt-4 price">$16.00</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-5 col-sm-5 col-12 card mt-4">
+                          <div class="s-img">
+                            <img src="Assets/Media/shop-2.png" class="card-img-top" alt="logo">
+                            <div class="overlayer-shop d-flex justify-content-center">
+                              <button type="button"><i class="bi bi-cart3"></i>Add to Cart</button>
+                          </div>
+                          <div class="shop-tag">New</div>
+                          </div>
+                          <div>
+                              <div class="card-body p-4 card-q ">
+                              <p class="card-text text-color fw-bold d-flex justify-content-center">Access to all the courses</p>
+                              <p class="text-center pt-4 price">$37.00</p>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-5 col-sm-5 col-12 card mt-4">
+                          <div class="s-img">
+                            <img src="Assets/Media/shop-3.png" class="card-img-top" alt="logo">
+                            <div class="overlayer-shop d-flex justify-content-center">
+                              <button type="button"><i class="bi bi-cart3"></i>Add to Cart</button>
+                          </div>
+                          <div class="shop-tag">New</div>
+                          </div>
+                        <div>
+                            <div class="card-body p-4 card-q ">
+                            <p class="card-text text-color fw-bold d-flex justify-content-center">Access to all the courses</p>
+                            <p class="text-center pt-4 price">$37.00</p>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col-md-5 col-sm-5 col-12 card mt-4">
+                          <div class="s-img">
+                            <img src="Assets/Media/shop-.png" class="card-img-top" alt="logo">
+                            <div class="overlayer-shop d-flex justify-content-center">
+                              <button type="button"><i class="bi bi-cart3"></i>Add to Cart</button>
+                          </div>
+                          <div class="shop-tag">New</div>
+                          </div>
+                          <div>
+                          <div class="card-body  p-4 card-q ">
+                          <p class="card-text text-color fw-bold d-flex justify-content-center">Access to all the courses</p>
+                          <p class="text-center pt-4 price">$37.00</p>
+                          </div>
+                          </div>
+                        </div>
+                    </div>
+                    <a href="#" class="fw-bold text-color text-center a-btn mt-5">Explore More</a>
+                </div>
+            </div>
+        </section>
+        <!--shop-->
+        <!--Gallery-->
+        <section class="Gallery">
+            <div class="container">
+                <div class="container-fluid">
+                    <p class="text-color fw-bold text-center pt-5">Gallery</p>
+                    <h2>Providing Medical Care For <br>The Sickest In Our Community.</h2>
+                        <div class="row  ">
+                          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                              <div class="gallery-img">          
+                                <img src="Assets/Media/gallery-a.png" width="100%" alt="imag" class="gallery-hover">
+                                <div class="over-layer text-center ">
+                                  <img src="Assets/Media/gallery-hover.png" alt="logo" class="d-flex justify-content-center align-items-center">
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                            <div class="gallery-img">          
+                              <img src="Assets/Media/gallery-b.png" width="100%" alt="imag" class="gallery-hover">
+                              <div class="over-layer text-center ">
+                                <img src="Assets/Media/gallery-hover.png" alt="logo">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-12 mt-4">
+                          <div class="gallery-img">          
+                            <img src="Assets/Media/gallery-c.png" width="100%" alt="imag" class="gallery-hover">
+                            <div class="over-layer text-center ">
+                              <img src="Assets/Media/gallery-hover.png" alt="logo">
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="row  ">
+                          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                              <div class="gallery-img">          
+                                <img src="Assets/Media/gallery-d.png" width="100%" alt="imag" class="gallery-hover">
+                                <div class="over-layer text-center ">
+                                  <img src="Assets/Media/gallery-hover.png" alt="logo">
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                            <div class="gallery-img">          
+                              <img src="Assets/Media/gallery-e.png" width="100%" alt="imag" class="gallery-hover">
+                              <div class="over-layer text-center ">
+                                <img src="Assets/Media/gallery-hover.png" alt="logo">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-12 mt-4">
+                          <div class="gallery-img">          
+                            <img src="Assets/Media/gallery-f2.png" width="100%" alt="imag" class="gallery-hover">
+                            <div class="over-layer text-center ">
+                              <img src="Assets/Media/gallery-hover.png" alt="logo">
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                    <a href="#" class="fw-bold text-color a-btn mt-5 text-center ">Explore More</a>
+                </div>
+            </div>
+        </section>
+        <!--Gallery-->
+    </main>
+    <footer>
+        <section class="d-flex justify-content-center align-items-center footer-top" >
+            <div class="container">
+                <div class="container-fluid">
+                   <div class="footer-div">
+                       <div class="row ">
+                        <div class="col-lg-4 col-12  ">
+                            <img src="Assets/Media/footer-logo.png" alt="logo" class="mb-4">
+                            <p class="fp-width">Our goal is to deliver quality of care in a courteous, respectful, and compassionate manner. We hope you will allow us to care for you and strive to be the first and best choice for your family healthcare.</p>
+                            <a href="#" target="_blank" class="link">Register Now</a><i class="bi bi-arrow-right ps-3"></i>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12 d-flex pt-4">
+                            <ul class="hover-li"><h6>Departments</h6>
+                                <li><a href="#" >Neurology Clinic</a></li>
+                                <li><a href="#">Cardiology Clinic</a></li>
+                                <li><a href="#">Pathology Clinic</a></li>
+                                <li><a href="#">Laboratory Analysis</a></li>
+                                <li><a href="#">Pediatric Clinic</a></li>
+                                <li><a href="#">Cardiac Clinic</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12 d-flex pt-4">
+                            <ul class="hover-li"><h6>Links</h6>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Shop</a></li>
+                                <li><a href="">Courses</a></li>
+                                <li><a href="">Gallery</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-12  d-flex justify-content-center mt-4 ">
+                            <div class="card ">
+                              <div class="vr"></div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Quick Contact</h5>
+                                  <p class="card-text">If you have any questions or need help, feel free to contact us for medical assistance.</p>
+                                  <a href="tel:01061245741" class="footer-contact pt-4"><i class="bi bi-telephone-fill pe-4"></i>01061245741</a>
+                                  <p class="pt-3">2307 Beverley Rd Brooklyn, New York 11226 United States.</p>
+                                  <div class="d-flex gap-4 align-items-center">
+                                    <a href="#" class="card-link  d-flex align-items-center link"><i class="bi bi-arrow-right pe-2"></i>Get Direction</a>
+                                    <div class="d-flex ">
+                                       <div class="icons d-flex align-items-center justify-content-center gap-2" >
+                                           <div><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a></div>
+                                           <div><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a></div>
+                                           <div><a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube "></i></a> </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="container-fluid">
+                  <div class=" row d-flex justify-content-between align-items-center  footer-bottom ">
+                        <div class="col-lg-6 col-md-5 col-12">
+                            <p>©2022 Future Doctors Academy, All Rights Reserved.</p>
+                        </div>
+                       <div class="col-lg-6 col-md-6 col-12 justify-content-end">
+                        <ul class="d-flex  gap-3 ff-col">
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                       </div>
+                       <div class="footer-btn">
+                        <a href="#"><i class="bi bi-arrow-up"></i></a>
+                       </div>
+                       <div class="footer-hr"><hr></div>
+                     </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"   integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.free').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    </script>
+    <script>
+        $('.free').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+       crossorigin="anonymous">
+    </script>
+    <script src="Assets/Javascripte/index.js"></script>
+</body>
+</html>
